@@ -1,0 +1,46 @@
+{
+  "identifier": "com.eselimsen.taurihtmx",
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "title": "Tauri Htmx",
+        "label": "main",
+        "url": "proxy://localhost/app",
+        "fullscreen": false,
+        "resizable": true,
+        "height": 800,
+        "width": 1024
+      }
+    ],
+    "withGlobalTauri": true
+  },
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "proxy://localhost/app"
+  },
+  "bundle": {
+    "active": true,
+    "category": "DeveloperTool",
+    "copyright": "",
+    "externalBin": [],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "linux": {},
+    "android": {
+      "minSdkVersion": 24
+    },
+    "resources": [],
+    "shortDescription": "Demo application for Htmx usage with Tauri.",
+    "longDescription": "",
+    "targets": "all"
+  }
+}
